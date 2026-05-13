@@ -39,8 +39,8 @@ class filter_frontend extends \core_availability\frontend {
      * @param \cm_info $cm Course-module currently being edited (null if none)
      * @param \section_info $section Section currently being edited (null if none)
      */
-    public static function include_all_javascript($course, \cm_info $cm = null,
-            \section_info $section = null) {
+    public static function include_all_javascript($course, ?\cm_info $cm = null,
+            ?\section_info $section = null) {
         global $PAGE;
 
         // Prepare array of required YUI modules. It is bad for performance to
